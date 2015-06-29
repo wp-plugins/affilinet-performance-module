@@ -6,7 +6,7 @@ if (typeof(tinymce) != 'undefined') {
                 function _show_image(co) {
                     return co.replace(/\[affilinet_performance_ad([^\]]*)\]/g, function (a, b) {
                         var image = b.split('=');
-                        return '<img src="/wp-content/plugins/affilinet/images/' + image[1] + '.jpg" class="affilinet_performance_ad"  title="affilinet_performance_ad' + tinymce.DOM.encode(b) + '" />';
+                        return '<img src="'+ affilinet_mce_variables.image_path + image[1] + '.jpg" class="affilinet_performance_ad"  title="affilinet_performance_ad' + tinymce.DOM.encode(b) + '" />';
                     });
                 }
 
@@ -33,7 +33,7 @@ if (typeof(tinymce) != 'undefined') {
                     if (ed.target.className == 'affilinet_performance_ad') {
                         ed.stopImmediatePropagation();
                         editor.windowManager.open({
-                            title: 'Choose size',
+                            title: affilinet_mce_variables.choose_size,
                             body: [
                                 {
                                     type: 'listbox',
@@ -83,7 +83,7 @@ if (typeof(tinymce) != 'undefined') {
 
                 editor.addButton('affilinet_mce_button', {
                     icon: true,
-                    image: '/wp-content/plugins/affilinet/images/affilinet_signet_small.png',
+                    image: affilinet_mce_variables.image_path  + 'affilinet_signet_small.png',
                     type: 'menubutton',
                     text: 'Affilinet Performance Ads',
                     menu: [

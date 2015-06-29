@@ -31,9 +31,13 @@ class Affilinet_Plugin
 
          * End Disable YieldKit in Version 1
          */
+        foreach( array('post.php','post-new.php') as $hook ) {
+            add_action( "admin_head-$hook",array($this, 'affilinet_adminScript') );
+        }
 
 
     }
+
 
 
     /**
@@ -140,6 +144,25 @@ class Affilinet_Plugin
             add_filter('mce_buttons', array($this, 'register_buttons'));
         }
     }
+
+    /**
+     * Load TinyMCE Variables
+     */
+    function affilinet_adminScript()
+    {
+        $img = plugin_dir_url( plugin_basename( dirname(__FILE__) )  ). 'images/';
+        ?>
+        <!-- TinyMCE Shortcode Plugin -->
+        <script type='text/javascript'>
+            var affilinet_mce_variables = {
+                'image_path': '<?php echo $img; ?>',
+                'choose_size': 'Choose size'
+            };
+        </script>
+        <!-- TinyMCE Shortcode Plugin -->
+    <?php
+    }
+
 
     public function add_buttons($plugin_array)
     {

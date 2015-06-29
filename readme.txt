@@ -3,7 +3,7 @@ Contributors: Affilinet, teraone
 Tags: advertising, affilinet, affiliate marketing, display, advertisement, vermarktung, geld verdienen, online marketing, marketing, performance
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,13 +40,18 @@ Gebruik de nieuwe Data-Driven advertising technologie met geautomatiseerde adver
 
 You can download the Plugin from Wordpress Plugin repository or install manually
 
+= Install from Wordpress Plugin repository =
+1. Search for 'Affilinet Performance Ads'
+2. Click on 'Install' and activate the plugin
+3. Don't forget to enter your Publisher ID
+
+= Or Install manually =
 1. Download the Plugin
-2. Extract and upload the folder `affilinet` to the `/wp-content/plugins/` directory
+2. Extract and upload the folder `affilinet-performance-module` to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 = Enter your affilinet publisher account data =
-
-1. Navigate to the `affilinet` section in your WordPress Admin Backend
+1. Navigate to the `Affilinet` section in your WordPress Admin Backend
 2. If you do not have an affilinet publisher account, please signup first.
 3. In the settings choose your country platform and enter your affilinet Publisher ID
 
@@ -54,10 +59,14 @@ You can download the Plugin from Wordpress Plugin repository or install manually
 
 == Changelog ==
 
+= 1.6 =
+* Release Date: June 29, 2015
+* Fixing TinyMCE Button Image
+
 = 1.4 =
-Release Date: June 16, 2015
+* Release Date: June 16, 2015
 * Adding SubID Parameter
 
 = 1.3 =
-Release Date: June 11, 2015
+* Release Date: June 11, 2015
 * Initial release
