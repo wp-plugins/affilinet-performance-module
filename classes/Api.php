@@ -40,7 +40,7 @@ class Affilinet_Api
                     'EndDate' => (int)date_format($end_date, 'U'),
                     'SubId' => '',
                     'ProgramTypes' => 'All',
-                    'ValuationType' => 'DateOfConfirmation',
+                    'ValuationType' => 'DateOfRegistration',
                     'ProgramId' => Affilinet_PerformanceAds::getProgramIdByPlatform(get_option('affilinet_platform'))
 
                 )

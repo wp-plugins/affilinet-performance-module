@@ -3,7 +3,7 @@ Contributors: Affilinet, teraone
 Tags: advertising, affilinet, affiliate marketing, display, advertisement, vermarktung, geld verdienen, online marketing, marketing, performance
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ You can download the Plugin from Wordpress Plugin repository or install manually
 
 
 == Changelog ==
+
+= 1.7 =
+* Release Date: July 6, 2015
+* Report data shown by date of registration
 
 = 1.6 =
 * Release Date: June 29, 2015
